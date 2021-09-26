@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="MainApp" fx:id="Main_App" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #0068ad;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI_CLass.Controller">
+    <children>
+        <AnchorPane fx:id="Top_App" layoutX="10.0" layoutY="96.0" style="-fx-background-color: #ebf7ff;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="96.0">
+            <children>
+                <HBox fx:id="Search_Box" alignment="CENTER" layoutX="53.0" layoutY="21.0" minHeight="-Infinity" opacity="0.99" prefHeight="35.0" prefWidth="801.0" spacing="0.5" style="-fx-background-color: black;" AnchorPane.bottomAnchor="445.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="10.0">
+                    <children>
+                        <Pane fx:id="Search_Pane" maxWidth="1.7976931348623157E308" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="33.0" prefWidth="723.0">
+                            <children>
+                                <TextField fx:id="Search_Text_Field" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="724.5" style="-fx-background-color: White;">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </TextField>
+                                <JFXButton fx:id="Search_Cancel" alignment="CENTER" cancelButton="true" layoutX="685.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="38.0" text=" " visible="false">
+                                    <graphic>
+                                        <FontAwesomeIconView glyphName="REMOVE" size="30" />
+                                    </graphic>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </JFXButton>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                            </HBox.margin>
+                        </Pane>
+                        <JFXButton fx:id="Search_Button" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="38.0" style="-fx-background-color: White;" text=" ">
+                            <graphic>
+                                <FontAwesomeIconView glyphName="SEARCH" size="25" />
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </JFXButton>
+                        <JFXButton fx:id="Search_History" alignment="CENTER" layoutX="649.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="38.0" style="-fx-background-color: White;" text=" ">
+                            <graphic>
+                                <FontAwesomeIconView glyphName="HISTORY" size="25" />
+                            </graphic>
+                            <effect>
+                                <Shadow />
+                            </effect>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <WebView fx:id="Result_WebView" fontScale="1.3" layoutY="62.0" minHeight="-1.0" minWidth="-1.0" prefHeight="430.0" prefWidth="703.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0" />
+                <JFXListView fx:id="Search_ListView" layoutX="70.0" prefHeight="261.0" prefWidth="725.0" style="-fx-background-color: #e1e4e6;" visible="false" AnchorPane.bottomAnchor="182.0" />
+                <JFXButton fx:id="Search_Left" layoutX="14.0" layoutY="15.0" minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" text=" " AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="12.0">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CHEVRON_LEFT" size="20" />
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <JFXButton fx:id="Search_Right" layoutX="15.0" layoutY="20.0" minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" text=" " AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="12.0">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CHEVRON_RIGHT" size="20" text="" />
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <JFXButton buttonType="RAISED" layoutX="195.0" layoutY="100.0" />
+            </children>
+        </AnchorPane>
+        <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="100.0" style="-fx-background-color: #ebf7ff;" text="A-V" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="790.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+        <Button layoutX="114.0" layoutY="63.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="100.0" style="-fx-background-color: #ebf7ff;" text="V-A" AnchorPane.leftAnchor="120.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+        <Button layoutX="217.0" layoutY="63.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="100.0" style="-fx-background-color: #ebf7ff;" text=" " AnchorPane.leftAnchor="230.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button layoutX="333.0" layoutY="63.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="100.0" style="-fx-background-color: #ebf7ff;" text=" " AnchorPane.leftAnchor="340.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Text fill="#fffdfd" layoutX="732.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GNCTT" textAlignment="JUSTIFY" wrappingWidth="116.8033447265625" AnchorPane.topAnchor="20.0">
+            <font>
+                <Font name="System Italic" size="36.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

@@ -1,0 +1,3 @@
+dog . con chó
+hand . bàn tay
+fish . con cá

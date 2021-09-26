@@ -1,0 +1,3 @@
+elite<html><i>elite</i><br/><ul><li><font color='#cc0000'><b> Một kiểu chữ, in được 12 ký tự trong mỗi inch</b></font></li></ul></html>
+lite<html><i>lite</i><br/><ul><li><font color='#cc0000'><b> Một kiểu chữ, in được 12 ký tự trong mỗi inch</b></font></li></ul></html>
+key<html><i>key</i><br/><ul><li><font color='#cc0000'><b> Một kiểu chữ, in được 12 ký tự trong mỗi inch</b></font></li></ul></html>
